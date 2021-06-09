@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- JQuery -->
+        <script src="js/jquery.js" charset="utf-8" async defer></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/fed4770733.js"></script>
+
+        <!-- My jquery -->
+        <script src="js/index.js" charset="utf-8" async defer></script>
+
+        <!-- My Css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css" media="screen">
+            #wrapper_check_out_success {
+                color: #7B7B7B;
+                width: 100%;
+                margin: auto;
+                height: 1000px;
+                line-height: 1.8;
+            }
+            .wrapper_check_out_success_child {
+                width: 70%;
+                margin: auto;
+                background: white;
+                margin-bottom: 1%;
+                text-align: center;
+                -webkit-box-shadow: 0px 0px 8px -1px rgba(194,180,194,1);
+-moz-box-shadow: 0px 0px 8px -1px rgba(194,180,194,1);
+box-shadow: 0px 0px 8px -1px rgba(194,180,194,1);
+            }
+            .wrapper_check_out_success_child *{
+                padding-top: 0.5em;
+            }
+            .check-out-success-thank {
+                height: 100%;
+            }
+            .border-checkout-success {
+                border: 1px solid #ccc;
+                padding: 3px;
+                width: 70%;
+                background: #f2f2f2;
+                margin: auto;
+                text-align: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div id="wrapper_check_out_success">
+                    <div class="wrapper_check_out_success_child">
+                        <div class="check-out-success-thank">
+                            <div class="pt-3 text-danger" style=";background: white;">
+                                <i class="far fa-clock " style="font-size: 4em;"></i><span class="font-weight-bold pb-5 pl-2" style="font-size: 2em;">Cảm ơn bạn đã mua hàng</span>
+                            </div>
+                            <p class="font-weight-bold">Mã đơn hàng của bạn là: 44444444444</p>
+                            <p>Bạn có thể theo dõi đơn hàng tại
+                                <a href="">
+                                    <b class="pl-2">Tài khoản của tôi > Đơn hàng của tôi
+                                    </b>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrapper_check_out_success_child pb-2">
+                        <p>Vui lòng chuẩn bị số tiền tương ứng:</p>
+                        <p class="font-weight-bold text-danger" style="font-size: 2em;">1.650.000 đ
+                        </p>
+                        <p class="border-checkout-success"><i class="fas fa-envelope pr-2 text-info"></i></i>Chúng tôi đã gửi email xác nhận đơn hàng vào tài khoản email của bạn</p>
+                        <p class="border-checkout-success"><i class="fas fa-truck pr-2 text-info"></i>Đơn hàng của bạn sẽ được giao vào ngày 15-2-2019</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>

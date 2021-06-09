@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- JQuery -->
+        <script src="js/jquery.js" charset="utf-8" async defer></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/fed4770733.js"></script>
+
+        <!-- My jquery -->
+        <script src="js/index.js" charset="utf-8" async defer></script>
+
+        <!-- My Css -->
+        <link rel="stylesheet" type="text/css" href="css/style_old.css">
+        <style type="text/css" media="screen">
+            .title {
+                border-bottom: 1px solid #ccc;
+                margin-top: 1em !important;
+            }
+            .d-filter-item {
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            #wrapper_list_product {
+                margin-top: 2% !important;
+                height: 1150px;
+            }
+            #list_menu_product {
+                background: #fff;
+            }
+            .d-filter-title {
+                padding: 10px;
+                text-transform: uppercase;
+                font-weight: 800;
+                text-align: center;
+                border: 1px solid #ccc;
+                padding: 0;
+            }
+            #sort_menu {
+                height: 4%;
+                background: #f2f2f2;
+                margin-top: 1%;
+            }
+            #cate_list_item {
+                margin-top: 1%;
+            }
+            .p-item-img {
+                max-width: 100%;
+            }
+            .p-item {
+                border: 1px solid #ccc;
+                min-height: 183px;
+                display: inline-block;
+                margin-bottom: 10px;
+                max-width: 24.73%;
+            }
+            .p-item-price {
+                padding-top: 10px;
+                font-weight: 800;
+                color: #000;
+                font-size: 1.2em;
+                padding-bottom: 10px;
+            }
+            .p-item-product-id {
+                font-size: 0.9em;
+                line-height: 36px;
+                color: #656565;
+                text-transform: uppercase;
+                margin-bottom: 0
+            }
+            #pagination {
+                float: right;
+                height: auto;
+                background: #ccc;
+                padding: 6px 10px 6px 10px;
+
+            }
+            #pagination .page-number a {
+                padding: 3px 10px 3px 10px;
+                background: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 location" style="background: white;">
+                    <a href="#">Trang chủ</a>
+                    <span> / </span>
+                    <a href="#" style="color: #A9E2EE">Sản phẩm mới</a>
+                </div>
+            </div>
+            <div class="row title mt-5">
+                <div class="col-lg-6">
+                    <h4 class="text-uppercase font-weight-bold">Sản phẩm mới</h4>
+                    <span class="d-inline" style=";font-size: 0.7em;">(Tổng 180 sản phẩm)
+                    </span>
+                </div>
+            </div>
+            <div class="row" id="wrapper_list_product">
+                <div class="col-lg-3" id="list_menu_product">
+                    <div class="d-filter-title">Lọc sản phẩm</div>
+                    <div class="d-filter-item">hãng sản xuất</div>
+                    <div class="d-filter-item">loại giá</div>
+                    <div class="d-filter-item">loại ram</div>
+                    <div class="d-filter-item">cpu</div>
+                    <div class="d-filter-item">Kiểu tai nghe</div>
+                    <div class="d-filter-item">tính năng</div>
+                    <div class="d-filter-item">dòng cpu</div>
+                    <div class="d-filter-item">chất liệu</div>
+                    <div class="d-filter-item">hdd</div>
+                    <div class="d-filter-item">ram</div>
+                    <div class="d-filter-item">vga</div>
+                    <div class="d-filter-item">chiều cao</div>
+                    <div class="d-filter-item">form case</div>
+                    <div class="d-filter-item">màn hình</div>
+                    <div class="d-filter-item">dvd</div>
+                    <div class="d-filter-item">chủng loại</div>
+                    <div class="d-filter-item">Nguồn</div>
+                    <div class="d-filter-item">chipset</div>
+                    <div class="d-filter-item">hệ điều hành</div>
+                    <div class="d-filter-item">độ phân giả</div>
+                    <div class="d-filter-item">wifi</div>
+                    <div class="d-filter-item">socket</div>
+                    <div class="d-filter-item">Khổ giấy</div>
+                </div>
+                <div class="col-lg-9" id="list_product">
+                    <div id="sort_menu" class="pt-2 col-lg-12">
+                        <span class="pl-2">Sắp xếp theo: </span>
+                        <select name="sort_product" class="ml-2">
+                            <option value="0" onclick="window.location.href = 'http://www.hyperlinkcode.com/button-links.php'">Mới nhất</option>
+                            <option value="1">Giá tăng dần</option>
+                            <option value="2">Giá giảm dần</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-12" id="cate_list_item">
+                        <div class="col-lg-3 p-item">
+                            <p class="p-item-product-id">MÃ SP: 1234</p>
+                            <div style="width: 100%; height: 166px">
+                                <img class="p-item-img" src="img/product/product_detail/250_42394_hkc_m32a7f__1_.jpg" alt="">
+                            </div>
+                            <div style="height: 100px;">
+                                <a href=""><p class="p-item-title">Màn hình HKC 31,5"M32A7F Curved LED</p></a>
+                            </div>
+
+                            <div>
+                                <p class="p-item-price">1.200.000 VND
+                                </p>
+                            </div>
+                        </div><div class="col-lg-3 p-item">
+                            <p class="p-item-product-id">MÃ SP: 1234</p>
+                            <div style="width: 100%; height: 166px">
+                                <img class="p-item-img" src="img/product/product_detail/250_42394_hkc_m32a7f__1_.jpg" alt="">
+                            </div>
+                            <div style="height: 100px;">
+                                <a href=""><p class="p-item-title">Màn hình HKC 31,5"M32A7F Curved LED</p></a>
+                            </div>
+
+                            <div>
+                                <p class="p-item-price">1.200.000.000 VND
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 p-item">
+                            <p class="p-item-product-id">MÃ SP: 1234</p>
+                            <div style="width: 100%; height: 166px">
+                                <img class="p-item-img" src="img/product/product_detail/250_43586_camera_wifi_ptz_ezviz_cs_cv310_1080p.jpg" alt="">
+                            </div>
+                            <div style="height: 100px;">
+                                <a href=""><p class="p-item-title">Camera EZVIZ Outdoor CS-CV310 2.0MP ( CÓ ĐÈN CHỚP + CÒI BÁO ĐỘNG )</p></a>
+                            </div>
+
+                            <div>
+                                <p class="p-item-price">1.200.000 VND
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 p-item">
+                            <p class="p-item-product-id">MÃ SP: 1234</p>
+                            <div style="width: 100%; height: 166px">
+                                <img class="p-item-img" src="img/product/product_detail/250_44738_100_bv_0450_k6_xl_1.jpg" alt="">
+                            </div>
+                            <div style="height: 100px;">
+                                <a href=""><p class="p-item-title">Nguồn EVGA 450 BV, 80+ BRONZE 450W, 100-BV-0450-K1</p></a>
+                            </div>
+
+                            <div>
+                                <p class="p-item-price">1.200.000 VND
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" id="pagination">
+                        <div style="float: right;">
+                            <span class="page-number">
+                                <a href="">Quay về</a>
+                            </span>
+                            <span class="page-number">
+                                <a href="">1</a>
+                            </span>
+                            <span class="page-number">
+                                <a href="">2</a>
+                            </span>
+                            <span class="page-number">
+                                <a href="">3</a>
+                            </span>
+                            <span class="page-number">
+                                <a href="">4</a>
+                            </span>
+                            <span class="page-number">
+                                <a href="">Trang tiếp</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>

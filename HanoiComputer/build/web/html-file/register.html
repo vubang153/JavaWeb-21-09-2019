@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- JQuery -->
+        <script src="js/jquery.js" charset="utf-8" async defer></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/fed4770733.js"></script>
+
+        <!-- My jquery -->
+        <script src="js/index.js" charset="utf-8" async defer></script>
+
+        <!-- My Css -->
+        <link rel="stylesheet" type="text/css" href="css/style_old.css">
+        <style type="text/css" media="screen">
+            .title {
+                border-bottom: 1px solid #ccc;
+                margin-top: 1em !important;
+            }
+            div#register_table table tr td select {
+                margin-right: 1px;
+                min-width: 100px;
+            }
+            div#register_table td {
+                padding-bottom: 10px;
+            }
+            div#register_table input[type*="password"],input[type*=text] {
+                min-width: 60%;
+                min-height: 10%;
+                padding-left: 3px;
+                font-size: 0.8em;
+            }
+            div#register_table input[type*="radio"] {
+                margin-left: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 location" style="background: white;">
+                    <a href="#">Trang chủ</a>
+                    <span> / </span>
+                    <a href="#" style="color: #A9E2EE">Đăng kí</a>
+                </div>
+            </div>
+            <div class="row title mt-5">
+                <div class="col-lg-2">
+                    <h4 class="text-uppercase font-weight-bold">Đăng kí</h4>
+                </div>
+            </div>
+            <div class="row" id="register_table">
+                <form action="register_submit" method="get" accept-charset="utf-8" class="col-lg-12">
+                    <table class="col-lg-10">
+                        <thead>
+                            <tr>
+                                <td colspan="2"><p>Tạo tài khoản khách hàng cá nhân</p></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tài khoản đăng kí*</td>
+                                <td><input type="text" name="info[account]">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tên*</td>
+                                <td><input type="text" name="info[name]">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Số điện thoại</td>
+                                <td><input type="text" name="info[phone_number]">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Giới tính*</td>
+                                <td>
+                                    <input type="radio" name="info[sex]" value="male"> Nam
+                                    <input type="radio" name="info[sex]" value="female"> Nữ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ngày sinh</td>
+                                <td>
+                                    <select name="info[birthday]">
+                                        <option value="1">- Ngày - </option>
+                                    </select>
+                                    <select name="info[birthmonth]">
+                                        <option value="1">- Tháng -</option>
+                                    </select>
+                                    <select name="info[birthyear]">
+                                        <option value="1">- Năm -</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mật khẩu*</td>
+                                <td><input type="password" name="info[password]" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Địa chỉ</td>
+                                <td>
+                                    <input type="text" name="" value="" placeholder="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Tỉnh thành phố</td>
+                                <td>
+                                    <select name="info[province]">
+
+                                        <option value="1">Hà nội</option>
+
+                                        <option value="2">TP HCM</option>
+
+                                        <option value="5">Hải Phòng</option>
+
+                                        <option value="4">Đà Nẵng</option>
+
+                                        <option value="6">An Giang</option>
+
+                                        <option value="7">Bà Rịa-Vũng Tàu</option>
+
+                                        <option value="13">Bình Dương</option>
+
+                                        <option value="15">Bình Phước</option>
+
+                                        <option value="16">Bình Thuận</option>
+
+                                        <option value="14">Bình Định</option>
+
+                                        <option value="8">Bạc Liêu</option>
+
+                                        <option value="10">Bắc Giang</option>
+
+                                        <option value="9">Bắc Kạn</option>
+
+                                        <option value="11">Bắc Ninh</option>
+
+                                        <option value="12">Bến Tre</option>
+
+                                        <option value="18">Cao Bằng</option>
+
+                                        <option value="17">Cà Mau</option>
+
+                                        <option value="3">Cần Thơ</option>
+
+                                        <option value="24">Gia Lai</option>
+
+                                        <option value="25">Hà Giang</option>
+
+                                        <option value="26">Hà Nam</option>
+
+                                        <option value="27">Hà Tĩnh</option>
+
+                                        <option value="30">Hòa Bình</option>
+
+                                        <option value="28">Hải Dương</option>
+
+                                        <option value="29">Hậu Giang</option>
+
+                                        <option value="31">Hưng Yên</option>
+
+                                        <option value="32">Khánh Hòa</option>
+
+                                        <option value="33">Kiên Giang</option>
+
+                                        <option value="34">Kon Tum</option>
+
+                                        <option value="35">Lai Châu</option>
+
+                                        <option value="38">Lào Cai</option>
+
+                                        <option value="36">Lâm Đồng</option>
+
+                                        <option value="37">Lạng Sơn</option>
+
+                                        <option value="39">Long An</option>
+
+                                        <option value="40">Nam Định</option>
+
+                                        <option value="41">Nghệ An</option>
+
+                                        <option value="42">Ninh Bình</option>
+
+                                        <option value="43">Ninh Thuận</option>
+
+                                        <option value="44">Phú Thọ</option>
+
+                                        <option value="45">Phú Yên</option>
+
+                                        <option value="46">Quảng Bình</option>
+
+                                        <option value="47">Quảng Nam</option>
+
+                                        <option value="48">Quảng Ngãi</option>
+
+                                        <option value="49">Quảng Ninh</option>
+
+                                        <option value="50">Quảng Trị</option>
+
+                                        <option value="51">Sóc Trăng</option>
+
+                                        <option value="52">Sơn La</option>
+
+                                        <option value="53">Tây Ninh</option>
+
+                                        <option value="56">Thanh Hóa</option>
+
+                                        <option value="54">Thái Bình</option>
+
+                                        <option value="55">Thái Nguyên</option>
+
+                                        <option value="57">Thừa Thiên-Huế</option>
+
+                                        <option value="58">Tiền Giang</option>
+
+                                        <option value="59">Trà Vinh</option>
+
+                                        <option value="60">Tuyên Quang</option>
+
+                                        <option value="61">Vĩnh Long</option>
+
+                                        <option value="62">Vĩnh Phúc</option>
+
+                                        <option value="63">Yên Bái</option>
+
+                                        <option value="19">Đắk Lắk</option>
+
+                                        <option value="22">Đồng Nai</option>
+
+                                        <option value="23">Đồng Tháp</option>
+
+                                        <option value="21">Điện Biên</option>
+
+                                        <option value="20">Đăk Nông</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input type="submit" name="" value="Đăng kí" class="btn btn-danger" style="width: 150px;">
+                                </td>
+                            </tr>
+
+                        </tfoot>
+
+
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>

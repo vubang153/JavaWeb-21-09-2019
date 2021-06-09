@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- JQuery -->
+    <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- My Css -->
+    <link rel="stylesheet" type="text/css" href="css/style_old.css">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/fed4770733.js"></script>
+
+</head>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="row-container col-md-5 col-sm-6 col-xs-12">
+            <form method="POST" action="xu_ly_dang_nhap" class="border-danger">
+                <h3 class="text-center font-weight-bold text-uppercase">Đăng nhập</h3>
+                <div class="form-group">
+
+                    <label for="idUsername">Tên đăng nhập</label>
+                    <input type="text" name="txtUsername" value="" placeholder="Tên đăng nhập" id="idUsername" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="idPassword">Mật khẩu</label>
+                    <input type="password" name="txtPassword" value="" placeholder="Mật khẩu" id="idPassword" class="form-control">
+                </div>
+                <div class="form-check">
+                	<input type="checkbox" name="checkLogin" id="idCheckLogin" class="form-check-inputk">
+                	<label for="idCheckLogin" class="form-check-label">Ghi nhớ đăng nhập</label>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block">Đăng nhập</button>
+            </form>	
+        </div>
+    </div>
+</div>

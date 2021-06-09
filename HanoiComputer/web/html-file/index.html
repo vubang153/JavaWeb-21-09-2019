@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- JQuery -->
+        <script src="js/index.js" type="text/javascript" charset="utf-8" async defer></script>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+        <script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <!-- My Css -->
+        <link rel="stylesheet" type="text/css" href="css/style_old.css">
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/fed4770733.js"></script>
+        <style type="text/css" media="screen">
+            div#menu ul {
+                display: block;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Header menu -->
+        <div class="container-fluid sticky-top">
+            <div class="row bg-light" id="header_bar_link">
+                <div class="col-lg-5">
+
+                </div>
+                <div class="col-lg-7 col-xs-7">
+                    <ul class="text-uppercase">
+                        <li><a href="#">chăm sóc khách hàng</a></li>
+                        <li><a href="">kiểm tra đơn hàng</a></li>
+                        <li><a href="Login.html">đăng nhập</a></li>
+                        <li><a href="">đăng kí</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row bg-white align-content-center">
+                <div class="col-lg-3">
+                    <a href="">
+                        <img src="img/logo.png" alt="logo" id="logo">
+                    </a>
+                </div>
+                <div class="col-lg-9">
+                    <form>
+                        <input type="text" name="" placeholder="Tìm kiếm sản phẩm" class="bg-faded">
+                        <button type="button" class="btn btn-danger btn-sm">
+                            <span class="fas fa-search"> Search</span>
+                        </button>
+                        <a href="#">
+                            <span class="fas fa-cart-plus text-danger"></span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="banner">
+            <div id="carousel-slide" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                    <li data-target="#carousel-slide" data-slide-to="0" class="active"></li><li data-target="#carousel-slide" data-slide-to="1"></li>
+                    <li data-target="#carousel-slide" data-slide-to="2"></li>
+                    <li data-target="#carousel-slide" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/carousel/carousel1.jpg" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/carousel2.jpg" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/carousel3.jpg" >
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carousel/carousel4.jpg" >
+                    </div>
+                </div>
+            </div>
+            <div id="menu" class="text-left main_sub_menu">
+                <ul>
+                    <li>Hello<i class="fas fa-chevron-right"></i>
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>                    <ul>
+                    <li>Hello
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>                    <ul>
+                    <li>Hello
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>                    <ul>
+                    <li>Hello
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>                    <ul>
+                    <li>Hello
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>                    <ul>
+                    <li>Hello
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>                    <ul>
+                    <li>Hello
+                        <ul>
+                            <div class="sub_menu main_sub_menu ">
+                                <li>hello2</li><li>hello2</li><li>hello2</li><li>hello2</li>
+                            </div>	
+                        </ul>
+                </ul>
+            </div>	
+        </div>
+        <!-- Phan san pham -->
+        <div class="container-fluid" id="main_content">
+            <div class="btn-block">
+                <button type="button" class="btn btn-danger text-left pl-2 pr-2">Sản phẩm mới</button>
+            </div>
+            <hr>
+            <!-- Danh sach san pham moi -->
+            <div class="row">
+                <div class="bg-danger list-product content col-lg-10">
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/advertisement/27_Auga0c63dcae80fc696aca54399e5b17c34.jpg" alt="" class="col-lg-2 advertisement" style="margin-top: 12px;">
+            </div>
+            <!-- Danh sach san pham ban chay -->
+            <div class="btn-block mt-3">
+                <button type="button" class="btn btn-danger text-left pl-2 pr-2">Sản phẩm bán chạy</button>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="bg-danger list-product content col-lg-10">
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-2 col-xs-12">
+                        <span class="product-id">Mã SP: 1111</span>
+                        <img class="card-img-top" src="img/product/250_47014_asus_gaming_g531gd_1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h6 class="card-title  text-center"><a href="#">HNC STANDARD WORKSTATION SW16 - Xeon E-2146G / 16GB ECC (2x8GB) / 250GB / 1TB</a></h6>
+                            <p class="product-price text-danger">30.000.000 VND</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/advertisement/16_Auge4c9d948e79fc2ab89e6fa4d1f8d2974.jpg" alt="" class="col-lg-2 advertisement" style="margin-top: 12px;">
+            </div>
+        </div>
+        <!--Footer -->
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-lg-9">
+                    <ul class="col-lg-3 pt-4 pl-5">
+                        <h6 class="pb-2">Thông tin chung</h6>
+                        <li><a href="#">Giới thiệu công ty</a></li>
+                        <li><a href="#">Hệ thống showroom</a></li>
+                        <li><a href="#">Thông tin liên hệ</a></li>
+                        <li><a href="#">Ý kiến khách hàng</a></li>
+                        <li><a href="#">Trang tin công nghệ</a></li>
+                        <li><a href="#">Thông tin tuyển dụng</a></li>
+                    </ul>
+                    <ul class="col-lg-3 pt-4 pl-5">
+                        <h6 class="pb-2">Chính sách chung</h6>
+                        <li><a href="#">Chính sách giới thiệu chung</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách hoàn tiền</a></li>
+                        <li><a href="#">Chính sách trả, đổi hàng</a></li>
+                        <li><a href="#">Chính sách chính hãng</a></li>
+                        <li><a href="#">Chính sách gameNet</a></li><li><a href="#">Bảo mật thông tin khách hàng</a></li>
+                    </ul>
+                    <ul class="col-lg-3 pt-4 pl-5">
+                        <h6 class="pb-2">Thông tin khuyến mãi</h6>
+                        <li><a href="#">Thông tin khuyến mãi</a></li>
+                        <li><a href="#">Sản phẩm khuyến mại</a></li>
+                        <li><a href="#">Sản phẩm bán chạy</a></li>
+                        <li><a href="#">Sản phẩm mới</a></li>
+                        <img src="img/dathongbao.png" alt="">
+                    </ul>
+                    <ul class="col-lg-3 pt-4 pl-5">
+                        <h6 class="pb-2">Hỗ trợ khách hàng</h6>
+                        <li><a href="#">Hưỡng dẫn mua hàng trực tuyến</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        <li><a href="#">Hướng dẫn thanh toán qua ZaloPay</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng trả góp</a></li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3 pt-4">
+                    <h6>Thanh toán an toàn</h6>
+                    <span>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fab fa-cc-amazon-pay"></i>
+                        <i class="fab fa-apple-pay"></i>
+                        <i class="fab fa-bitcoin"></i>
+                    </span>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <hr>
+                <div class="copyright pl-5 col-lg-12">
+                    <p class="font-weight-bold">Công Ty Cổ Phần Máy Tính Hà Nội.
+                    </p>
+                    <p>Địa chỉ: Số 129 + 131, phố Lê Thanh Nghị, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội.
+                    </p>
+                    <p>GPĐKKD số 0101161194 do Sở KHĐT Tp.Hà Nội cấp ngày 31/8/2001
+                    </p>
+                    <p>
+                        Email: hnc@hanoicomputer.com. Điện thoại: 1900 1903
+
+                    </p>	
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
